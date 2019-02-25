@@ -1,6 +1,6 @@
 // Jefferson V. Henry 
 // CIS-123 
-// Week 2, Program 1
+// Week 1, Program 0
 // ~~ Instructions ~~
 // No programs for week1
 
