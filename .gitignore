@@ -33,3 +33,7 @@
 
 # Sublime Text 3 files
 *.sublime-workspace
+*.in
+
+# Files in submition format
+*-jeffvhenry.cpp

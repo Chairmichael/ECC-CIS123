@@ -15,6 +15,5 @@ int main() {
     cin >> str2;
     cin >> str3;
     cout << str1 + str2 + str3 << endl;
-    system("pause");
     return 0;
 }

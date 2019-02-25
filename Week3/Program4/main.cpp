@@ -21,6 +21,5 @@ int main() {
 
     cout << "Degrees Fahrenheit = " << fTemp << endl;
     cout << "Kelvins = " << kTemp << endl;
-    system("pause");
     return 0;
 }

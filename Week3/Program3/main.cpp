@@ -14,6 +14,5 @@ int main() {
     cin >> length;
     length *= 2.54;
     cout << "centimeters = " << length << endl;
-    system("pause");
     return 0;
 }

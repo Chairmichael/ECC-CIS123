@@ -17,17 +17,14 @@ using namespace std;
 
 int main() {
     int a = 5, b = 10, c;
-    // cout << "a=";
-    // cin >> a;
-    // cout << "b=";
-    // cin >> b;
-    cout << "not swapped" << endl;
-    cout << "a=" << a << endl << "b=" << b << endl;
+    cout << "a=";
+    cin >> a;
+    cout << "b=";
+    cin >> b;
     c = a;
     a = b;
-    b = a;
+    b = c;
     cout << "swapped" << endl;
     cout << "a=" << a << endl << "b=" << b << endl;
-    system("pause");
     return 0;
 }
