@@ -17,8 +17,9 @@ def main():
     print(f'number of source files = {len(source_files)}')
     for file in source_files:
         cwd = os.getcwd()
-        new_name = file.replace('\\','-').replace('main','jeffvhenry')
-        new_name = new_name.replace('Week','w').replace('Program','p')
+        new_name = file.split('\\')
+        new_name = [ d[0].lower() + d[-1] for d in new_name[0:-1] ]
+        new_name = '-'.join(new_name) + '-jeffvhenry.cpp'
         copy_and_rename(oldfile=f'{cwd}\\{file}', newfile=f'{cwd}\\{new_name}')
 
 if __name__ == '__main__':
