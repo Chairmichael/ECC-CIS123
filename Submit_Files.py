@@ -7,7 +7,7 @@ def copy_and_rename(oldfile, newfile):
     with open(oldfile, 'r') as old:
         with open(newfile, 'w+') as new:
             for line in old: new.write(line)
-
+            
 def main():
     source_files = []
     for root, dirs, files in os.walk("."):
@@ -18,7 +18,7 @@ def main():
     for file in source_files:
         cwd = os.getcwd()
         new_name = file.split('\\')
-        new_name = [ d[0].lower() + d[-1] for d in new_name[0:-1] ]
+        new_name = list(d[0].lower() + d[-1] for d in new_name[0:-1])
         new_name = '-'.join(new_name) + '-jeffvhenry.cpp'
         copy_and_rename(oldfile=f'{cwd}\\{file}', newfile=f'{cwd}\\{new_name}')
 
