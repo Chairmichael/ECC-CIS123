@@ -12,7 +12,7 @@ def main():
     source_files = []
     for root, dirs, files in os.walk("."):
         for f in files:
-            if f.endswith('.cpp') and root != '.':
+            if f.endswith('.cpp') and root != '.' and 'old' not in root:
                 source_files.append(root[2:] + '\\' + f)
     print(f'number of source files = {len(source_files)}')
     for file in source_files:
