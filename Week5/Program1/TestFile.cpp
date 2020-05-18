@@ -2,6 +2,7 @@
 // Jefferson V. Henry
 
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int main() {
@@ -62,4 +63,14 @@ int main() {
     cout << "eofbit =\t" << cin.eof() << endl;
     cout << "goodbit =\t" << cin.good() << endl;
     system("pause");
+
+    // 7
+    // ifstream fin("nothere");
+    // int str;
+    // fin >> str;
+    // cout << str << endl;
+    // if (str) cout << "Not NULL" << endl;
+    // else if (!str) cout << "NULL" << endl;
+    // else cout << "Something weird happened" << endl;
+    // system("pause");
 }
